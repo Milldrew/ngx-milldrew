@@ -1,24 +1,28 @@
-# MilldrewsLib
+# Getting Started With Schematics
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.0.
+This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
 
-## Code scaffolding
+### Testing
 
-Run `ng generate component component-name --project milldrews-lib` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project milldrews-lib`.
-> Note: Don't forget to add `--project milldrews-lib` or else it will be added to the default project in your `angular.json` file. 
+To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
 
-## Build
+Check the documentation with
 
-Run `ng build milldrews-lib` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+schematics --help
+```
 
-## Publishing
+### Unit Testing
 
-After building your library with `ng build milldrews-lib`, go to the dist folder `cd dist/milldrews-lib` and run `npm publish`.
+`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
 
-## Running unit tests
+### Publishing
 
-Run `ng test milldrews-lib` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To publish, simply do:
 
-## Further help
+```bash
+npm run build
+npm publish
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+That's it!
