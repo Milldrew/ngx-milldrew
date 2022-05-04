@@ -12,6 +12,8 @@
     "paths": {
       "milldrews-lib": [
         "dist/milldrews-lib/milldrews-lib",
+        "dist/milldrews-lib",
+        "dist/milldrews-lib/milldrews-lib",
         "dist/milldrews-lib"
       ]
     },
